@@ -1,0 +1,13 @@
+{
+  "name": "aic-chatbot",
+  "type": "module",
+  "scripts": {
+    "ingest": "node scripts/ingest.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
+  }
+}

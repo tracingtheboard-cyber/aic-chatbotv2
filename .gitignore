@@ -1,0 +1,17 @@
+# 环境变量（含密钥，不要提交）
+.env
+.env.local
+env.local
+.env.*.local
+
+# 依赖
+node_modules/
+
+# 本地/构建
+.vercel
+dist/
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db
