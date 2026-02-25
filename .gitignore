@@ -3,6 +3,7 @@
 .env.local
 env.local
 .env.*.local
+wordpress-api/config.php
 
 # 依赖
 node_modules/

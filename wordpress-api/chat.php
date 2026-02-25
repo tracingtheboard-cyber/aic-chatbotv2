@@ -5,6 +5,8 @@
  *
  * POST body: { "message": "user question" }
  * Response:  { "reply": "assistant reply" }
+ *
+ * Deploy: copy this folder to your WordPress server; ensure config.php exists (from config.sample.php).
  */
 
 header('Content-Type: application/json; charset=utf-8');
@@ -26,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $configFile = __DIR__ . '/config.php';
 if (!is_file($configFile)) {
     http_response_code(500);
-    echo json_encode(['reply' => 'Server configuration missing. Add api/config.php with OpenAI API key.']);
+    echo json_encode(['reply' => 'Server configuration missing. Copy config.sample.php to config.php and set OpenAI API key.']);
     exit;
 }
 
